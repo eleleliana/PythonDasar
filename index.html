@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color:white;
+            line-height:1.6;
+        }
+
+        .container{
+            width:90%;
+            max-width:1100px;
+            margin:auto;
+        }
+
+        header{
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        .profile-img{
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            border:5px solid white;
+            object-fit:cover;
+            margin-bottom:20px;
+        }
+
+        header h1{
+            font-size:42px;
+        }
+
+        header p{
+            font-size:18px;
+            opacity:0.9;
+        }
+
+        section{
+            background:white;
+            color:#333;
+            margin:20px 0;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            color:#2a5298;
+            margin-bottom:15px;
+        }
+
+        ul{
+            padding-left:20px;
+        }
+
+        .project-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .project{
+            background:#f5f5f5;
+            padding:20px;
+            border-radius:10px;
+            transition:0.3s;
+        }
+
+        .project:hover{
+            transform:translateY(-5px);
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            color:white;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#2a5298;
+            color:white;
+            padding:10px 20px;
+            border-radius:8px;
+            text-decoration:none;
+            margin-top:10px;
+        }
+
+        .btn:hover{
+            background:#1e3c72;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://via.placeholder.com/150" alt="Foto Profil" class="profile-img">
+        <h1>Nama Lengkap Anda</h1>
+        <p>Web Developer | Programmer | Desainer</p>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>📌 Informasi Pribadi</h2>
+            <p><strong>Nama:</strong> Nama Lengkap Anda</p>
+            <p><strong>Alamat:</strong> Alamat Lengkap Anda</p>
+        </section>
+
+        <section>
+            <h2>🎓 Pendidikan</h2>
+            <ul>
+                <li>SMA/SMK - Nama Sekolah (2022 - Sekarang)</li>
+                <li>Kursus Web Development</li>
+                <li>Kursus Python Dasar</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>💼 Pengalaman Kerja</h2>
+            <ul>
+                <li>Magang Web Developer - PT Contoh Indonesia</li>
+                <li>Freelance Pembuatan Website</li>
+                <li>Membuat Aplikasi Python Sederhana</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🚀 Hasil Karya</h2>
+
+            <div class="project-grid">
+
+                <div class="project">
+                    <h3>Website Portofolio</h3>
+                    <p>Website pribadi untuk menampilkan profil dan karya.</p>
+                </div>
+
+                <div class="project">
+                    <h3>Aplikasi Kasir Python</h3>
+                    <p>Aplikasi kasir sederhana menggunakan Python.</p>
+                </div>
+
+                <div class="project">
+                    <h3>Website Sekolah</h3>
+                    <p>Website informasi sekolah berbasis HTML, CSS, dan JavaScript.</p>
+                </div>
+
+            </div>
+
+            <a href="#" class="btn">Lihat Semua Karya</a>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Portofolio Pribadi | Dibuat dengan HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
